@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html ng-app="JUG">
+<html ng-app="JUG" ng-controller="Recruteur as recruteur">
 <head>
     <meta charset="UTF-8">
-    <title>JUG</title>
+    <title>{{recruteur.title}}</title>
 
 </head>
-<body ng-controller="Recruteur as recruteur">
+<body>
 <ul>
   <li ng-repeat="dev in recruteur.devs">{{dev.prenom}} {{dev.nom}}</li>
 </ul>

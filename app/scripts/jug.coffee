@@ -1,10 +1,7 @@
 angular.module 'JUG', []
  .controller 'Recruteur', class
-     constructor: ->
-        @devs = [
-            nom:'NOM1'
-            prenom:'PRENOM1'
-        ,
-            nom:'NOM2'
-            prenom:'PRENOM2'
-        ]
+     constructor: ($http) ->
+       @title = 'JUG du 11 septembre'
+       $http.get('/programmers').success (data) =>
+         @devs = data
+
