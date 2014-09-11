@@ -1,13 +1,9 @@
 ---
-layout : default
-ng-app : JUG
+layout : main
 title : JUG du 11 septembre
 ---
 
-<body ng-controller="Recruteur as recruteur">
 <ul>
   <li ng-repeat="dev in recruteur.devs">{{dev.prenom}} {{dev.nom}}</li>
 </ul>
-</body>
-<script src="/webjars/angularjs/1.2.23/angular.min.js"></script>
-<script src="/scripts/jug.js" ></script>
+
