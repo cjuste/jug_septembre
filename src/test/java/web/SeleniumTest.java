@@ -21,6 +21,6 @@ public class SeleniumTest extends net.codestory.simplelenium.SeleniumTest {
   public void page_not_found() {
     goTo("/");
 
-    find("h1").should().contain("Page not found");
+    find("h1").should().contain("Header");
   }
 }
